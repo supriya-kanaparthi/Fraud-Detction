@@ -1,0 +1,25 @@
+DATASET INFORMATION
+
+Dataset Name:
+Credit Card Fraud Detection Dataset
+
+Source:
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+Description:
+This dataset contains credit card transactions made by European cardholders. It includes both genuine and fraudulent transactions and is widely used for fraud detection machine learning projects.
+
+Dataset Size:
+Approximately 150 MB
+
+Reason for Exclusion:
+The original dataset is not included in this repository because its size exceeds GitHub's recommended file upload limits. Users can download the dataset directly from the source link provided above.
+
+Usage:
+This dataset is used for training and evaluating machine learning models to identify fraudulent credit card transactions.
+
+Project:
+Credit Card Fraud Detection Using Machine Learning
+
+Author:
+Supriya Kanaparthi
