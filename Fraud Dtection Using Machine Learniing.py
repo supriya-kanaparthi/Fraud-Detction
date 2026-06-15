@@ -25,7 +25,7 @@ print(df.isnull().sum())
 # Handle missing values by dropping rows with NaNs
 df.dropna(inplace=True)
 
-# Challenge 1: Anomaly Detection
+# Anomaly Detection
 print(df['Class'].value_counts())
 
 sns.countplot(x='Class', data=df)
@@ -34,7 +34,7 @@ plt.show()
 sns.boxplot(x=df['Amount'])
 plt.show()
 
-# Challenge 2: Machine Learning Models
+# Machine Learning Models
 X = df.drop('Class', axis=1)
 y = df['Class']
 
@@ -68,7 +68,7 @@ dt.fit(X_train, y_train)
 dt_pred = dt.predict(X_test)
 print("Decision Tree Accuracy:", accuracy_score(y_test, dt_pred))
 
-# Challenge 3: Feature Engineering
+# Feature Engineering
 plt.figure(figsize=(12,8))
 sns.heatmap(df.corr())
 plt.show()
@@ -85,7 +85,7 @@ importance = pd.DataFrame({
 
 print(importance.sort_values(by='Importance', ascending=False).head(10))
 
-# Challenge 4: Real-Time Monitoring
+# Real-Time Monitoring
 new_transaction = X_test[0:1]
 
 prob = model.predict_proba(new_transaction)[0][1]
@@ -98,7 +98,7 @@ elif prob > 0.3:
 else:
     print("LOW RISK")
 
-# Challenge 5: Scalability
+# Scalability
 large_df = pd.concat([df] * 5)
 
 print("Dataset Size:", large_df.shape)
